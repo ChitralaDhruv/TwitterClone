@@ -78,6 +78,7 @@ class createAccountVC: UIViewController {
         Next.backgroundColor = #colorLiteral(red: 0.09729228169, green: 0.5134958029, blue: 0.7864598632, alpha: 1)
         Next.layer.cornerRadius = 12.5
         Next.setTitleColor(.white, for: .normal)
+        Next.addTarget(self, action: #selector(didTapNext), for: .touchUpInside)
         
         return Next
     }()
@@ -133,6 +134,19 @@ class createAccountVC: UIViewController {
         Next.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
         Next.heightAnchor.constraint(equalToConstant: 25).isActive = true
 
+    }
+    
+    
+    //MARK: - TapFunctions
+    
+    
+    
+    @objc private func didTapNext(){
+        let rootVC = HomeTabVC()
+        rootVC.modalPresentationStyle = .fullScreen
+        
+        present(rootVC, animated: true)
+        
     }
 
 }

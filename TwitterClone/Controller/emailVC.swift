@@ -70,6 +70,7 @@ class emailVC: UIViewController {
         Next.backgroundColor = #colorLiteral(red: 0.09729228169, green: 0.5134958029, blue: 0.7864598632, alpha: 1)
         Next.layer.cornerRadius = 22
         Next.setTitleColor(.white, for: .normal)
+        Next.addTarget(self, action: #selector(didTapNext), for: .touchUpInside)
         
         return Next
     }()
@@ -130,6 +131,9 @@ class emailVC: UIViewController {
         Next.heightAnchor.constraint(equalToConstant: 44).isActive = true
     }
     
+    //MARK: - NavigationBar Setup
+    
+    
     private func navBarSetup() {
         let logo = UIImageView(frame: CGRect(x: 0, y: 0, width: 270, height: 30))
         logo.contentMode = .scaleAspectFit
@@ -137,6 +141,18 @@ class emailVC: UIViewController {
         self.navigationItem.titleView = logo
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(dismissSelf))
+    }
+    
+    //MARK: - TapFunctions
+    
+    
+    
+    @objc private func didTapNext(){
+        let rootVC = HomeTabVC()
+        rootVC.modalPresentationStyle = .fullScreen
+        
+        present(rootVC, animated: true)
+        
     }
 
 }

@@ -16,6 +16,12 @@
 		64430AF227CF1EC400E662B3 /* emailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64430AF127CF1EC400E662B3 /* emailVC.swift */; };
 		64B5736E27CF46D1008B0B7E /* createAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B5736D27CF46D1008B0B7E /* createAccountVC.swift */; };
 		64B5737027CF4BF5008B0B7E /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B5736F27CF4BF5008B0B7E /* extension.swift */; };
+		64B5737227CF4E93008B0B7E /* HomeTabVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B5737127CF4E93008B0B7E /* HomeTabVC.swift */; };
+		64B5737427CF5105008B0B7E /* homeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B5737327CF5105008B0B7E /* homeVC.swift */; };
+		64B5737627CF5124008B0B7E /* searchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B5737527CF5124008B0B7E /* searchVC.swift */; };
+		64B5737827CF5135008B0B7E /* spacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B5737727CF5135008B0B7E /* spacesVC.swift */; };
+		64B5737A27CF5150008B0B7E /* notificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B5737927CF5150008B0B7E /* notificationVC.swift */; };
+		64B5737C27CF5169008B0B7E /* messagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B5737B27CF5169008B0B7E /* messagesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,12 @@
 		64430AF127CF1EC400E662B3 /* emailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emailVC.swift; sourceTree = "<group>"; };
 		64B5736D27CF46D1008B0B7E /* createAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccountVC.swift; sourceTree = "<group>"; };
 		64B5736F27CF4BF5008B0B7E /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		64B5737127CF4E93008B0B7E /* HomeTabVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabVC.swift; sourceTree = "<group>"; };
+		64B5737327CF5105008B0B7E /* homeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeVC.swift; sourceTree = "<group>"; };
+		64B5737527CF5124008B0B7E /* searchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchVC.swift; sourceTree = "<group>"; };
+		64B5737727CF5135008B0B7E /* spacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spacesVC.swift; sourceTree = "<group>"; };
+		64B5737927CF5150008B0B7E /* notificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationVC.swift; sourceTree = "<group>"; };
+		64B5737B27CF5169008B0B7E /* messagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messagesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,7 @@
 				64430AED27CB4BE200E662B3 /* LoginVC.swift */,
 				64430AF127CF1EC400E662B3 /* emailVC.swift */,
 				64B5736D27CF46D1008B0B7E /* createAccountVC.swift */,
+				64B5737D27CF5278008B0B7E /* TabBar */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -106,6 +119,19 @@
 				64B5736F27CF4BF5008B0B7E /* extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		64B5737D27CF5278008B0B7E /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				64B5737127CF4E93008B0B7E /* HomeTabVC.swift */,
+				64B5737327CF5105008B0B7E /* homeVC.swift */,
+				64B5737527CF5124008B0B7E /* searchVC.swift */,
+				64B5737727CF5135008B0B7E /* spacesVC.swift */,
+				64B5737927CF5150008B0B7E /* notificationVC.swift */,
+				64B5737B27CF5169008B0B7E /* messagesVC.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,12 +204,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B5737827CF5135008B0B7E /* spacesVC.swift in Sources */,
 				64430ADB27C8B12E00E662B3 /* ViewController.swift in Sources */,
 				64430AF227CF1EC400E662B3 /* emailVC.swift in Sources */,
 				64430AD727C8B12E00E662B3 /* AppDelegate.swift in Sources */,
+				64B5737227CF4E93008B0B7E /* HomeTabVC.swift in Sources */,
 				64B5736E27CF46D1008B0B7E /* createAccountVC.swift in Sources */,
+				64B5737C27CF5169008B0B7E /* messagesVC.swift in Sources */,
 				64430AEE27CB4BE200E662B3 /* LoginVC.swift in Sources */,
+				64B5737A27CF5150008B0B7E /* notificationVC.swift in Sources */,
+				64B5737627CF5124008B0B7E /* searchVC.swift in Sources */,
 				64430AD927C8B12E00E662B3 /* SceneDelegate.swift in Sources */,
+				64B5737427CF5105008B0B7E /* homeVC.swift in Sources */,
 				64B5737027CF4BF5008B0B7E /* extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
