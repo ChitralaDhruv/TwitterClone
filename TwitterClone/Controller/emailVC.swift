@@ -24,6 +24,10 @@ class emailVC: UIViewController {
         
     }
     
+    //MARK: - Closures
+    
+    
+    
     private let label: UILabel = {
         let label = UILabel()
         label.text = "To get started, first enter your phone, email, or @username and password"
@@ -85,6 +89,10 @@ class emailVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    //MARK: - AutoLayout
+    
+    
+    
     private func setUpAutoLayout() {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 35).isActive = true
@@ -133,13 +141,3 @@ class emailVC: UIViewController {
 
 }
 
-extension UITextField {
-    func addBottomBorder(){
-        let bottomLine = CALayer()
-        bottomLine.frame = CGRect(x: 0, y: self.frame.size.height+40, width: UIScreen.main.bounds.width - 40, height: 1)
-        bottomLine.backgroundColor = #colorLiteral(red: 0.2264783382, green: 0.2719595432, blue: 0.3096426427, alpha: 1)
-        borderStyle = .none
-        layer.addSublayer(bottomLine)
-        
-    }
-}

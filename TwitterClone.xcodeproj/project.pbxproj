@@ -13,9 +13,9 @@
 		64430AE027C8B13100E662B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64430ADF27C8B13100E662B3 /* Assets.xcassets */; };
 		64430AE327C8B13100E662B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64430AE127C8B13100E662B3 /* LaunchScreen.storyboard */; };
 		64430AEE27CB4BE200E662B3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64430AED27CB4BE200E662B3 /* LoginVC.swift */; };
-		64430AF027CB511200E662B3 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64430AEF27CB511200E662B3 /* NavigationVC.swift */; };
 		64430AF227CF1EC400E662B3 /* emailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64430AF127CF1EC400E662B3 /* emailVC.swift */; };
 		64B5736E27CF46D1008B0B7E /* createAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B5736D27CF46D1008B0B7E /* createAccountVC.swift */; };
+		64B5737027CF4BF5008B0B7E /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B5736F27CF4BF5008B0B7E /* extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		64430AE227C8B13100E662B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64430AE427C8B13100E662B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64430AED27CB4BE200E662B3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		64430AEF27CB511200E662B3 /* NavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
 		64430AF127CF1EC400E662B3 /* emailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emailVC.swift; sourceTree = "<group>"; };
 		64B5736D27CF46D1008B0B7E /* createAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccountVC.swift; sourceTree = "<group>"; };
+		64B5736F27CF4BF5008B0B7E /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,6 @@
 		64430AEA27CB4B5C00E662B3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				64430AEF27CB511200E662B3 /* NavigationVC.swift */,
 				64430AED27CB4BE200E662B3 /* LoginVC.swift */,
 				64430AF127CF1EC400E662B3 /* emailVC.swift */,
 				64B5736D27CF46D1008B0B7E /* createAccountVC.swift */,
@@ -104,6 +103,7 @@
 		64430AF327CF357200E662B3 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				64B5736F27CF4BF5008B0B7E /* extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 				64B5736E27CF46D1008B0B7E /* createAccountVC.swift in Sources */,
 				64430AEE27CB4BE200E662B3 /* LoginVC.swift in Sources */,
 				64430AD927C8B12E00E662B3 /* SceneDelegate.swift in Sources */,
-				64430AF027CB511200E662B3 /* NavigationVC.swift in Sources */,
+				64B5737027CF4BF5008B0B7E /* extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
