@@ -44,11 +44,17 @@ class LoginVC: UIViewController {
     
     private let continueWithGoogle: UIButton = {
         let continueWithGoogle = UIButton()
-        continueWithGoogle.setTitle("Continue with Google", for: .normal)
+        continueWithGoogle.setTitle("  Continue with Google", for: .normal)
         continueWithGoogle.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         continueWithGoogle.backgroundColor = #colorLiteral(red: 0.8322516084, green: 0.8272855282, blue: 0.8316798806, alpha: 1)
         continueWithGoogle.layer.cornerRadius = 22.5
         continueWithGoogle.setTitleColor(.black, for: .normal)
+        
+        let image = UIImage(named: "google")!
+        let newImage = image.resize(withSize: CGSize(width: 38, height: 38), contentMode: .contentAspectFill)
+        
+        continueWithGoogle.setImage(newImage, for: .normal)
+
         
         
         return continueWithGoogle
@@ -56,11 +62,15 @@ class LoginVC: UIViewController {
     
     private let continueWithApple: UIButton = {
         let continueWithApple = UIButton()
-        continueWithApple.setTitle("Continue with Apple", for: .normal)
+        continueWithApple.setTitle("  Continue with Apple", for: .normal)
         continueWithApple.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         continueWithApple.backgroundColor = #colorLiteral(red: 0.8322516084, green: 0.8272855282, blue: 0.8316798806, alpha: 1)
         continueWithApple.layer.cornerRadius = 22.5
         continueWithApple.setTitleColor(.black, for: .normal)
+        let image = UIImage(named: "apple")!
+        let newImage = image.resize(withSize: CGSize(width: 24, height: 24), contentMode: .contentAspectFill)
+        
+        continueWithApple.setImage(newImage, for: .normal)
         
         
         return continueWithApple
