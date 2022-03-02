@@ -27,26 +27,10 @@ class LoginVC: UIViewController {
         setUpAutoLayout()
     }
     
-    private let emailTextField: UITextField = {
-        let emailTextField = UITextField(frame: CGRect(x: 30, y: 400, width: 300, height: 30))
-        emailTextField.text = ""
-        emailTextField.placeholder = "   Username"
-        emailTextField.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        emailTextField.layer.cornerRadius = 8
-        
-        return emailTextField
-    }()
     
-    private let passwordTextField: UITextField = {
-        let passwordTextField = UITextField(frame: CGRect(x: 30, y: 440, width: 300, height: 30))
-        passwordTextField.text = ""
-        passwordTextField.placeholder = "   Password"
-        passwordTextField.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        passwordTextField.layer.cornerRadius = 8
-        
-        
-        return passwordTextField
-    }()
+    //MARK: - Closures
+    
+
     
     private let label: UILabel = {
         let label = UILabel()
@@ -99,13 +83,12 @@ class LoginVC: UIViewController {
         createAccount.layer.cornerRadius = 22.5
         createAccount.setTitleColor(.white, for: .normal)
         
-        
         return createAccount
     }()
     
     private let agreementLabel: UILabel = {
         let agreementLabel = UILabel()
-        agreementLabel.text = "By signing up, you agree to our Terms , Privacy Policy, and Cookie Use."
+        agreementLabel.text = "By signing up, you agree to our Terms, Privacy Policy, and Cookie Use."
         agreementLabel.numberOfLines = 2
         agreementLabel.textColor = #colorLiteral(red: 0.5238783956, green: 0.5943279862, blue: 0.6359843612, alpha: 1)
         agreementLabel.font = UIFont.boldSystemFont(ofSize: 12)
@@ -114,7 +97,7 @@ class LoginVC: UIViewController {
     }()
     
     private let LogInLabel: UILabel = {
-        let LogInLabel = UILabel(frame: CGRect(x: 30, y: 100, width: 300, height: 200))
+        let LogInLabel = UILabel()
         LogInLabel.text = "Have an account already?"
         LogInLabel.numberOfLines = 1
         LogInLabel.textColor = #colorLiteral(red: 0.5238783956, green: 0.5943279862, blue: 0.6359843612, alpha: 1)
@@ -124,9 +107,10 @@ class LoginVC: UIViewController {
     }()
     
     private let LogIn: UIButton = {
-        let LogIn = UIButton(frame: CGRect(x: 30, y: 500, width: 80, height: 20))
+        let LogIn = UIButton()
         LogIn.setTitle("Login", for: .normal)
         LogIn.setTitleColor(#colorLiteral(red: 0.09729228169, green: 0.5134958029, blue: 0.7864598632, alpha: 1), for: .normal)
+        LogIn.addTarget(self, action: #selector(didTapLogIn), for: .touchUpInside)
         
         return LogIn
     }()
@@ -137,12 +121,15 @@ class LoginVC: UIViewController {
         return bird
     }()
     
+    //MARK: - AutoLayout
+    
+    
     private func setUpAutoLayout() {
         bird.translatesAutoresizingMaskIntoConstraints = false
         bird.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
         bird.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        bird.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        bird.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        bird.heightAnchor.constraint(equalToConstant: 45).isActive = true
+        bird.widthAnchor.constraint(equalToConstant: 45).isActive = true
         
         label.translatesAutoresizingMaskIntoConstraints = false
         label.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 40).isActive = true
@@ -190,5 +177,18 @@ class LoginVC: UIViewController {
         LogIn.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -70).isActive = true
         LogIn.heightAnchor.constraint(equalToConstant: 15).isActive = true
     
+    }
+    
+    //MARK: - TapFunctions
+    
+    
+    
+    @objc private func didTapLogIn(){
+        let rootVC = emailVC()
+        let navVC = UINavigationController(rootViewController: rootVC)
+        navVC.modalPresentationStyle = .fullScreen
+        
+        present(navVC, animated: true)
+        
     }
 }
