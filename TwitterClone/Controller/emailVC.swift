@@ -66,7 +66,6 @@ class emailVC: UIViewController {
         Next.backgroundColor = #colorLiteral(red: 0.09729228169, green: 0.5134958029, blue: 0.7864598632, alpha: 1)
         Next.layer.cornerRadius = 22
         Next.setTitleColor(.white, for: .normal)
-        Next.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         
         return Next
     }()

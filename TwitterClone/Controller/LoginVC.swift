@@ -82,6 +82,7 @@ class LoginVC: UIViewController {
         createAccount.backgroundColor = #colorLiteral(red: 0.09729228169, green: 0.5134958029, blue: 0.7864598632, alpha: 1)
         createAccount.layer.cornerRadius = 22.5
         createAccount.setTitleColor(.white, for: .normal)
+        createAccount.addTarget(self, action: #selector(didTapCreateAccount), for: .touchUpInside)
         
         return createAccount
     }()
@@ -108,7 +109,7 @@ class LoginVC: UIViewController {
     
     private let LogIn: UIButton = {
         let LogIn = UIButton()
-        LogIn.setTitle("Login", for: .normal)
+        LogIn.setTitle("Log in", for: .normal)
         LogIn.setTitleColor(#colorLiteral(red: 0.09729228169, green: 0.5134958029, blue: 0.7864598632, alpha: 1), for: .normal)
         LogIn.addTarget(self, action: #selector(didTapLogIn), for: .touchUpInside)
         
@@ -185,6 +186,15 @@ class LoginVC: UIViewController {
     
     @objc private func didTapLogIn(){
         let rootVC = emailVC()
+        let navVC = UINavigationController(rootViewController: rootVC)
+        navVC.modalPresentationStyle = .fullScreen
+        
+        present(navVC, animated: true)
+        
+    }
+    
+    @objc private func didTapCreateAccount(){
+        let rootVC = createAccountVC()
         let navVC = UINavigationController(rootViewController: rootVC)
         navVC.modalPresentationStyle = .fullScreen
         

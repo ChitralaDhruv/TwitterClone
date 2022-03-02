@@ -15,6 +15,7 @@
 		64430AEE27CB4BE200E662B3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64430AED27CB4BE200E662B3 /* LoginVC.swift */; };
 		64430AF027CB511200E662B3 /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64430AEF27CB511200E662B3 /* NavigationVC.swift */; };
 		64430AF227CF1EC400E662B3 /* emailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64430AF127CF1EC400E662B3 /* emailVC.swift */; };
+		64B5736E27CF46D1008B0B7E /* createAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B5736D27CF46D1008B0B7E /* createAccountVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		64430AED27CB4BE200E662B3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		64430AEF27CB511200E662B3 /* NavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
 		64430AF127CF1EC400E662B3 /* emailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emailVC.swift; sourceTree = "<group>"; };
+		64B5736D27CF46D1008B0B7E /* createAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccountVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				64430AEF27CB511200E662B3 /* NavigationVC.swift */,
 				64430AED27CB4BE200E662B3 /* LoginVC.swift */,
 				64430AF127CF1EC400E662B3 /* emailVC.swift */,
+				64B5736D27CF46D1008B0B7E /* createAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				64430ADB27C8B12E00E662B3 /* ViewController.swift in Sources */,
 				64430AF227CF1EC400E662B3 /* emailVC.swift in Sources */,
 				64430AD727C8B12E00E662B3 /* AppDelegate.swift in Sources */,
+				64B5736E27CF46D1008B0B7E /* createAccountVC.swift in Sources */,
 				64430AEE27CB4BE200E662B3 /* LoginVC.swift in Sources */,
 				64430AD927C8B12E00E662B3 /* SceneDelegate.swift in Sources */,
 				64430AF027CB511200E662B3 /* NavigationVC.swift in Sources */,
