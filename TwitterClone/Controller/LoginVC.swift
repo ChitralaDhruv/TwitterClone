@@ -145,13 +145,13 @@ class LoginVC: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 40).isActive = true
         label.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -40).isActive = true
-        label.topAnchor.constraint(equalTo: bird.bottomAnchor, constant: 120).isActive = true
-        label.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        label.topAnchor.constraint(equalTo: bird.bottomAnchor, constant: 70).isActive = true
+        label.heightAnchor.constraint(equalToConstant: 130).isActive = true
         
         continueWithGoogle.translatesAutoresizingMaskIntoConstraints = false
         continueWithGoogle.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 40).isActive = true
         continueWithGoogle.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -40).isActive = true
-        continueWithGoogle.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 100).isActive = true
+        continueWithGoogle.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 75).isActive = true
         continueWithGoogle.heightAnchor.constraint(equalToConstant: 45).isActive = true
         
         continueWithApple.translatesAutoresizingMaskIntoConstraints = false
@@ -175,17 +175,17 @@ class LoginVC: UIViewController {
         agreementLabel.translatesAutoresizingMaskIntoConstraints = false
         agreementLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 40).isActive = true
         agreementLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -40).isActive = true
-        agreementLabel.topAnchor.constraint(equalTo: createAccount.bottomAnchor, constant: 22).isActive = true
-        agreementLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        agreementLabel.topAnchor.constraint(equalTo: createAccount.bottomAnchor, constant: 18).isActive = true
+        agreementLabel.heightAnchor.constraint(equalToConstant: 29).isActive = true
         
         LogInLabel.translatesAutoresizingMaskIntoConstraints = false
         LogInLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 40).isActive = true
-        LogInLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -70).isActive = true
+        LogInLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
         LogInLabel.heightAnchor.constraint(equalToConstant: 15).isActive = true
         
         LogIn.translatesAutoresizingMaskIntoConstraints = false
         LogIn.leftAnchor.constraint(equalTo: LogInLabel.rightAnchor, constant: 5).isActive = true
-        LogIn.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -70).isActive = true
+        LogIn.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -40).isActive = true
         LogIn.heightAnchor.constraint(equalToConstant: 15).isActive = true
     
     }

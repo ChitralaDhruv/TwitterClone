@@ -24,7 +24,7 @@ class homeVC: UIViewController {
     private func navBarSetup() {
         navigationItem.title = "Home"
         
-        let logo = UIImageView(frame: CGRect(x: 0, y: 0, width: 270, height: 30))
+        let logo = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         logo.contentMode = .scaleAspectFit
         logo.image = #imageLiteral(resourceName: "twitterBird")
         self.navigationItem.titleView = logo

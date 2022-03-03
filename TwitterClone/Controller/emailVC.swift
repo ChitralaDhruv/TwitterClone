@@ -34,7 +34,7 @@ class emailVC: UIViewController {
         label.textAlignment = .center
         label.font = UIFont.boldSystemFont(ofSize: 25)
         label.textColor = #colorLiteral(red: 0.9067615867, green: 0.9017952681, blue: 0.9061897397, alpha: 1)
-        label.numberOfLines = 3
+        label.numberOfLines = 4
         
         return label
     }()
@@ -99,7 +99,7 @@ class emailVC: UIViewController {
         label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 35).isActive = true
         label.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 40).isActive = true
         label.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -40).isActive = true
-        label.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        label.heightAnchor.constraint(equalToConstant: 120).isActive = true
         
         
         emailTextField.translatesAutoresizingMaskIntoConstraints = false
@@ -135,10 +135,12 @@ class emailVC: UIViewController {
     
     
     private func navBarSetup() {
-        let logo = UIImageView(frame: CGRect(x: 0, y: 0, width: 270, height: 30))
+        let logo = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         logo.contentMode = .scaleAspectFit
         logo.image = #imageLiteral(resourceName: "twitterBird")
         self.navigationItem.titleView = logo
+        
+        self.navigationController?.navigationBar.tintColor = .white
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(dismissSelf))
     }
