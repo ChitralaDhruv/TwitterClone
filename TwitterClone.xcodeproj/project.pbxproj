@@ -22,6 +22,7 @@
 		64B5737827CF5135008B0B7E /* spacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B5737727CF5135008B0B7E /* spacesVC.swift */; };
 		64B5737A27CF5150008B0B7E /* notificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B5737927CF5150008B0B7E /* notificationVC.swift */; };
 		64B5737C27CF5169008B0B7E /* messagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B5737B27CF5169008B0B7E /* messagesVC.swift */; };
+		64B5737F27D34C59008B0B7E /* twitterPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B5737E27D34C59008B0B7E /* twitterPostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		64B5737727CF5135008B0B7E /* spacesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spacesVC.swift; sourceTree = "<group>"; };
 		64B5737927CF5150008B0B7E /* notificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationVC.swift; sourceTree = "<group>"; };
 		64B5737B27CF5169008B0B7E /* messagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messagesVC.swift; sourceTree = "<group>"; };
+		64B5737E27D34C59008B0B7E /* twitterPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twitterPostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		64430AD527C8B12E00E662B3 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				64B5737E27D34C59008B0B7E /* twitterPostCell.swift */,
 				64430AF327CF357200E662B3 /* Extension */,
 				64430AEC27CB4B7600E662B3 /* Model */,
 				64430AEB27CB4B6F00E662B3 /* View */,
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64B5737827CF5135008B0B7E /* spacesVC.swift in Sources */,
+				64B5737F27D34C59008B0B7E /* twitterPostCell.swift in Sources */,
 				64430ADB27C8B12E00E662B3 /* ViewController.swift in Sources */,
 				64430AF227CF1EC400E662B3 /* emailVC.swift in Sources */,
 				64430AD727C8B12E00E662B3 /* AppDelegate.swift in Sources */,
