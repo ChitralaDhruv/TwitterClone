@@ -132,22 +132,22 @@ class twitterPostCell: UITableViewCell {
     
     private func setUpAutoLayout() {
         userProfile.translatesAutoresizingMaskIntoConstraints = false
-        userProfile.topAnchor.constraint(equalTo: topAnchor, constant: 10).isActive = true
+        userProfile.topAnchor.constraint(equalTo: topAnchor, constant: 22).isActive = true
         userProfile.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 25).isActive = true
         userProfile.widthAnchor.constraint(equalToConstant: 60).isActive = true
         userProfile.heightAnchor.constraint(equalToConstant: 60).isActive = true
         
         
         tweet.translatesAutoresizingMaskIntoConstraints = false
-        tweet.topAnchor.constraint(equalTo: topAnchor, constant: 43).isActive = true
-        tweet.leadingAnchor.constraint(equalTo: userProfile.trailingAnchor, constant: 10).isActive = true
+        tweet.topAnchor.constraint(equalTo: topAnchor, constant: 60).isActive = true
+        tweet.leadingAnchor.constraint(equalTo: userProfile.trailingAnchor, constant: 5).isActive = true
         tweet.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -30).isActive = true
         tweet.bottomAnchor.constraint(equalTo: like.topAnchor, constant: -20).isActive = true
         
         
         userName.translatesAutoresizingMaskIntoConstraints = false
         userName.bottomAnchor.constraint(equalTo: tweet.topAnchor, constant: 4).isActive = true
-        userName.leadingAnchor.constraint(equalTo: userProfile.trailingAnchor, constant: 10).isActive = true
+        userName.leadingAnchor.constraint(equalTo: userProfile.trailingAnchor, constant: 5).isActive = true
         
         twitterName.translatesAutoresizingMaskIntoConstraints = false
         twitterName.bottomAnchor.constraint(equalTo: tweet.topAnchor, constant: 4).isActive = true
@@ -155,7 +155,7 @@ class twitterPostCell: UITableViewCell {
         
         
         options.translatesAutoresizingMaskIntoConstraints = false
-        options.topAnchor.constraint(equalTo: topAnchor, constant: 15).isActive = true
+        options.topAnchor.constraint(equalTo: topAnchor, constant: 5).isActive = true
         options.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -22).isActive = true
         options.widthAnchor.constraint(equalToConstant: 30).isActive = true
         options.heightAnchor.constraint(equalToConstant: 30).isActive = true
